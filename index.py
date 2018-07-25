@@ -29,8 +29,8 @@ class PythonObjectEncoder(json.JSONEncoder):
 
 def handler(event, context):
     logger.info('Event: %s' % json.dumps(event))
-    logger.info('Context: %s' %
-                json.dumps(vars(context), cls=PythonObjectEncoder))
+    # logger.info('Context: %s' %
+    #             json.dumps(vars(context), cls=PythonObjectEncoder))
 
     data = {
         'output': 'Hello World test 2',
