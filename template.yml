@@ -65,6 +65,9 @@ Resources:
         -
           AttributeName: "TicketSales"
           AttributeType: "S"
+       -
+          AttributeName: "Stuff"
+          AttributeType: "S"
       KeySchema:
         -
           AttributeName: "ArtistId"
