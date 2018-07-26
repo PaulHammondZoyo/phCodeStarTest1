@@ -33,7 +33,7 @@ def handler(event, context):
     #             json.dumps(vars(context), cls=PythonObjectEncoder))
 
     data = {
-        'output': 'Hello World test 2',
+        'output': 'Hello World test 200',
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     return {'statusCode': 200,
