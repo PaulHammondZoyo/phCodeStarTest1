@@ -23,6 +23,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
+      CodeUri: .
       Runtime: python3.6
       Role:
         Fn::ImportValue:
@@ -37,6 +38,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index2.handler
+      CodeUri: .
       Runtime: python3.6
       Role:
         Fn::ImportValue:
