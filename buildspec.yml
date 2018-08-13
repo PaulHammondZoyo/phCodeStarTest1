@@ -6,7 +6,6 @@ phases:
 
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
-      - aws ec2 describe-vpc --region eu-west-1
       - aws ec2 describe-subnets --filters "Name=vpc-id,Values=<vpc-id>" --region eu-west-1
 
   pre_build:
